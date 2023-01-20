@@ -1,0 +1,45 @@
+@import url(sanitize.css);
+body{
+    margin:0;
+    width:1880px;
+    margin:0 auto;
+}
+
+header div h1{
+    background-color: aqua;
+    padding:40px 0;
+    border: 1px solid black;
+    margin:0;
+    text-align:center;
+    }
+.top-container{
+    border:1px solid blue;
+    background-color: turquoise;
+    display: block;
+    padding:10px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.top-container .pics{
+    border: 1px solid black;
+    padding:5px;
+    text-align: center;
+    flex:auto;
+    width:11.5%;
+}
+.top-container div p{
+    text-align: center;
+    border:1px solid red;
+}
+
+@media(max-width:1600px){
+    .top-container .pics{
+        width:25%;
+    }
+}
+
+@media(max-widht:670px){
+    .top-container{
+        flex-direction: column;
+    }
+}
